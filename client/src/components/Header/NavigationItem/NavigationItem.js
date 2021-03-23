@@ -1,11 +1,11 @@
-import style from "./NavigationItem.module.css";
+import style from './NavigationItem.module.css';
 
 const NavigationItem = (props) => {
     return (
         <li className="listItem">
-            <a href="#">{props.children}</a>
+            <span className={style.navListItem}>{props.children}</span>
         </li>
     );
-};
+}
 
 export default NavigationItem;
